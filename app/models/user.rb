@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  acts_as_token_authenticatable
   validates :email, uniqueness: true
   validates :username, uniqueness: true
   # Include default devise modules. Others available are:
