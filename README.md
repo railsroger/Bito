@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Рельса последняя и руби, а именно:
+rails', '~> 6.1.3
+ruby '3.0.1'
 
-Things you may want to cover:
+Запрос на регу:
+curl --location --request POST 'localhost:3000/api/v1/sign_up' --form 'user[username]="USERNAME"' --form 'user[email]="EMAIL"' --form 'user[password]="PASSWORD"'
 
-* Ruby version
+Запрос на вход:
+curl --location --request POST 'localhost:3000/api/v1/sign_in' --form 'user[email]="EMAIL"' --form 'user[password]="PASSWORD"'
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
